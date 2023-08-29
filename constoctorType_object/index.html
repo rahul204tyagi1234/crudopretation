@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body align="center"  style="text-align: center; margin-top: 5%;">
+  <center>
+    <div class="container" style="width: 700px;">
+      <h1> -: login:-</h1>
+      <label> First Name</label>
+      <input id="fnamefield" size="20" type="text"><br>
+      <label> Last Name</label>
+      <input id="lnamefield" size="20" type="text"><br>
+      <label> Age</label>
+      <input id="agefield" size="20" type="text"><br>
+      <label> Gender</label>
+      <input id="genderfield" size="20" type="text"><br>
+
+        
+        <button onclick="createObj()">Submit</button>
+        
+        <div> 
+          <table id="table">
+            <thead>
+              <th>ID</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Action</th>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        </div>
+        <button onclick="compareData()">Compare Record</button>
+        <button onclick="removeRecord()">Remove</button>
+        <button onclick="openudateForm(id)">Update1</button>
+
+            
+            <div class="form-popup" id="updateForm" style="width: 440px;">
+              
+              <h1>Login</h1>
+              <div>
+
+                <label> First Name</label>
+                <input id="updatefirstName" size="20" type="text"><br>
+                <label> Last Name</label>
+                <input id="updateLastName" size="20" type="text"><br>
+                <label> Age</label>
+                <input id="updateAge" size="20" type="text"><br>
+                <label> Gender</label>
+                <input id="updateGender" size="20" type="text"><br>
+                <button onclick="updateform()">Update</button> 
+                
+              </div>
+              
+            </div>
+          </center>
+      
+ 
+     <script src="app.js"></script>
+</body>
+</html>

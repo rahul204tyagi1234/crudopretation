@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>-: Area - Print :- </h1>
+        <label>Enter the area</label>
+        <!-- <input id='areafield' size="5" type="text"> -->
+        <select id="areafield" >
+            <optgroup label="select area">
+            <option value="circle">circle</option>
+            <option value="triangle">triangle</option>
+            <option value="rectangle">rectangle</option>
+          </select>
+
+        <label>Enter the PI</label>
+        <input id='PIfield' size="5" type="text" placeholder="3.142">
+
+        <label>Enter the length</label>
+        <input id='lfield' size="5" type="text">
+
+        <label>Enter the b</label>
+        <input id='bfield' size="5" type="text">
+
+        <label>Enter the r</label>
+        <input id='rfield' size="5" type="text">
+
+        <button type="submit" onclick="createarea()" id="Submit">Submit</button>
+        <br><br><br>
+        <h1 id="result"></h1>
+        <!-- <h1  id="result"></h1> -->
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
